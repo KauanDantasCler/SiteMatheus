@@ -2,18 +2,14 @@ body {
     color: rgb(255, 255, 255);
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     background-color: rgb(70, 70, 70);
-
-
 }
 
 #container {
     display: flex;
     background-color: rgb(51, 51, 51);
-    height: 50vw;
+    height: 55vw;
     width: 94vw;
     border-radius: 1vw;
-
-
 }
 
 .logo {
@@ -23,8 +19,6 @@ body {
     margin: 0 auto;
     box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.5);
     border-radius: 1vw;
-
-
 }
 
 .header {
@@ -38,18 +32,15 @@ body {
     border-radius: 1vw;
     height: 3.5vw;
     margin-top: 2vw;
-
-
 }
 
 .principal {
-
     align-items: center;
     justify-content: space-between;
     margin-top: 3vw;
     margin-left: 2vw;
     width: 50vw;
-    height: 35vw;
+    height: 40vw;
     background: rgba(34, 34, 34, 0.85);
     border-radius: 12px;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10);
@@ -70,10 +61,10 @@ a {
     border-radius: 8px;
     color: white;
     transition: transform 0.2s;
-
 }
+
 a:hover {
-    
+
     transform: scale(1.1);
     box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.8);
 }
@@ -91,7 +82,6 @@ nav:hover {
 .imagem-container {
     display: flex;
     margin-top: 6vw;
-    
     flex-direction: column;
     gap: 2vw;
     /* Espaçamento entre as imagens */
@@ -151,6 +141,7 @@ h2 {
     transform: scale(1.02);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
 }
+
 .serviço2 {
     display: flex;
     flex-direction: column;
@@ -193,7 +184,6 @@ h3 {
     background-color: rgb(51, 51, 51);
     border-radius: 8px;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10);
-
 }
 
 html {
@@ -203,7 +193,6 @@ html {
 h4 {
     font-weight: 600;
     font-size: 1.5vw;
-
     text-align: center;
 }
 
@@ -214,4 +203,146 @@ p {
     text-align: center;
     opacity: 0.8;
     width: 20vw;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    opacity: 0.9;
+}
+
+@media (max-width: 913px) {
+    .Contato {
+        margin-top: 0vw;
+    }
+    .principal {
+        height: 40vw;
+    }
+    #container {
+        height: 55vw;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 90vw;
+    }
+
+    .logo {
+        width: 30vw;
+        height: 20vw;
+        margin-top: 2vw;
+    }
+
+    .header {
+        width: 90vw;
+        height: 7vw;
+        font-size: 3vw;
+        margin-top: 2vw;
+    }
+
+    .principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        height: 90vw;
+        margin-left: 0;
+        margin-top: 3vw;
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 3vw;
+        width: 70vw;
+        margin-top: 20vw;
+    }
+
+    .descricao {
+        font-size: 2.5vw;
+        width: 70vw;
+        margin-bottom: 5vw;
+    }
+
+    .Contato {
+        width: 50vw;
+        height: 7vw;
+        font-size: 2.3vw;
+        margin-top: 5vw;
+        border-radius: 3VW;
+    }
+
+    nav {
+        margin-left: 0;
+        font-size: 3vw;
+    }
+
+    .imagem-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+        margin-left: 0;
+        margin-top: 0vw;
+        gap: 2vw;
+        margin-bottom: 5vw;
+    }
+
+    #Serviços {
+        flex-direction: column;
+        gap: 4vw;
+        margin-left: 0;
+    }
+
+    .serviço1,
+    .serviço2 {
+        width: 80vw;
+        height: auto;
+    }
+
+    h3 {
+        font-size: 6vw;
+        width: 70vw;
+    }
+
+    h4 {
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 2.5vw;
+        width: 70vw;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+}
+@media (max-width: 470px) {
+    .principal {
+        width: 70vw;
+    }
+    #container {
+        width: 95vw;
+    }
+    .header {
+        width: 95vw;
+    }
+
 }
